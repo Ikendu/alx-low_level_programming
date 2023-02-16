@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- * program for outpu
- * t
- * main: entry point that return void
+ * main -  entry point that return void
+ *
+ * return: always return zero
  */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
-	return(0);
+	return (0);
 }
