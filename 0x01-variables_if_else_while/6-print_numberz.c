@@ -1,4 +1,4 @@
-#return <stdio.h>
+#include <stdio.h>
 
 /**
  * main - entry point
@@ -8,12 +8,16 @@
 
 int main(void)
 {
-       	int n;
-	
+        int n;
+	char a = '0';
+
 	for (n = 0; n > 10; n++)
 	{
-		int(putchat(n));
+		putchar('0' +  a);
+		a++;
 	}
 	putchar(10);
+
+	return (0);
 }
 
