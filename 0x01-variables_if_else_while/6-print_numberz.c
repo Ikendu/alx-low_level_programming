@@ -8,7 +8,7 @@
 
 int main(void)
 {
-        int a = 0;
+	int a = 0;
 	
 	for (; a < 10; a++)
 	{
