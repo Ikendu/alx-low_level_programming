@@ -9,7 +9,7 @@ nclude <stdio.h>
 int main(void)
 {
 	int num;
-
+	
 	for (num = 10; num < 20; num++)
 	{
 		putchar((num % 10) + '0');
@@ -19,7 +19,6 @@ int main(void)
 			putchar(' ');
 		}
 	}
-
 	putchar(10);
 	return (0);
-
+}

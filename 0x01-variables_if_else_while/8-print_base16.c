@@ -21,7 +21,7 @@ int main(void)
 
 	for (n = 0; n < 6; n++)
 	{
-		putchar('0' = a);
+		putchar('0' + a);
 		a++;
 	}
 
