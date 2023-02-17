@@ -24,6 +24,6 @@ int main(void)
 		putchar('0' + a);
 		a++;
 	}
-
+	putchar(10);
 	return (0);
 }
