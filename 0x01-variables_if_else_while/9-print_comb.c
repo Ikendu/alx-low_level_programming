@@ -10,9 +10,8 @@ int main(void)
 {
 	int num;
 
-	for(num = 10; num <= 20; num++)
+	for (num = 10; num < 20; num++)
 	{	
-
 		putchar((num % 10) + '0');
 		if (num != 19)
 		{
@@ -20,6 +19,6 @@ int main(void)
 			putchar(' ');
 		}
 	}
-	putchar(10);
+	putchar('\n');
 	return (0);
 }
