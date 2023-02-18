@@ -18,11 +18,11 @@ int main(void)
 			if ((j % 10) > (i % 10))
 			{
 				putchar((i % 10) + '0');
-				putchar((1 % 10) + '0');
+				putchar((j % 10) + '0');
 				if (i != 19 || j != 19)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(44);
+					putchar(32);
 				}
 			}
 		}
