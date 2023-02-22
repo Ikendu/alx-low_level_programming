@@ -1,7 +1,9 @@
 #include "main.h"
  /**
-  * jack_bauer - main function for minutes of thr day
+  * jack_bauer - main funtion
   *
+  * @i: gets the hour
+  * @j: get the minutes
   */
 void jack_bauer(void)
 {
