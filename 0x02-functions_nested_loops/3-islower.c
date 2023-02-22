@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * _islolwer - compare different items
+ * _islower - main function
  *
  * Return: 0 or 1
  *
  * @c: The char to be checked
+ *
  *
  */
 
