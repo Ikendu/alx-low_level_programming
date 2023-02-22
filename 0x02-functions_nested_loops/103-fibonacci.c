@@ -14,7 +14,7 @@ int main(void)
 	for (i = 1; i <= 4000000; i++)
 	{
 		sum = fb1 + fb2;
-			if((sum % 2) == 0)
+			if ( (sum % 2) == 0)
 				total += sum;
 		fb1 = fb2;
 		fb2 = sum;
