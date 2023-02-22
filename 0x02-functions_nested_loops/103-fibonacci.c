@@ -11,10 +11,13 @@ int main(void)
 	long i, fb1 = 0, fb2 = 1, sum;
 	float total;
 
-	for (i = 1; i <= 4000000; i++)
+	while(1)
 	{
 		sum = fb1 + fb2;
-			if ( (sum % 2) == 0)
+		if (sum > 4000000)
+			break;
+
+		if ( (sum % 2) == 0)
 				total += sum;
 		fb1 = fb2;
 		fb2 = sum;
