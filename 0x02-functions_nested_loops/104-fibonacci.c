@@ -12,7 +12,7 @@ int main(void)
 
 	float i = 1;
 	float j = i + 1;
-	float k = j + k;
+	float k = j + i;
 
 	printf("%.0f, ", i);
 	printf("%.0f, ", j);
