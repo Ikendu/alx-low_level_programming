@@ -8,30 +8,46 @@
 
 int main(void)
 {
-	int count = 2;
+	int count;
+	unsigned long fb1 = 0, fb2 = 1, sum;
+	unsigned long a, a2, b, b2;
+	unsigned long x, y;
 
-	float i = 1;
-	float j = i + 1;
-	float k = j + i;
-
-	printf("%.0f, ", i);
-	printf("%.0f, ", j);
-
-	while (count < 98)
+	for (count = 0; count < 92; count++)
 	{
-		count++;
-		printf("%.0f", k);
-		i = j;
-		j = k;
-		k = i + j;
+		sum = fb1 + fb2;
+		printf("%lu, ", sum);
 
-		if (count < 98)
+		fb1 = fb2;
+		fb2 = sum;
+	}	
+	
+	a = fb1 / 10000000000;
+	a2 = fb2 / 10000000000;
+	b = fb1 % 10000000000;
+	b2 = fb2 % 10000000000;
+
+	for (count = 93; count < 99; count++)
+	{
+		x = a + b;
+		y = a2 + b2;
+
+		if (a2 + b2 > 9999999999)
 		{
-			printf(", ");
+			x += 1;
+			y %= 10000000000;
 		}
+		printf("%lu%lu", x, y);
+		if (count != 98)
+			printf(", ");
+
+		a = b;
+		a2 = b2;
+		b = x;
+		b2 = y;
 	}
+
 	printf("\n");
 	return (0);
+
 }
-
-
