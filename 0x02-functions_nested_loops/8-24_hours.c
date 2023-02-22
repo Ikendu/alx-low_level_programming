@@ -1,10 +1,12 @@
 #include "main.h"
+
  /**
-  * jack_bauer - main funtion
+  * jack_bauer - Main funtion
   *
   * @i: gets the hour
   * @j: get the minutes
   */
+
 void jack_bauer(void)
 {
 	int i;
