@@ -4,7 +4,7 @@
  * @a: first entry
  * @b: second entry
  *
- * Retur: result of mult
+ * Return: result of mult
  */
 int mul(int a, int b)
 {
