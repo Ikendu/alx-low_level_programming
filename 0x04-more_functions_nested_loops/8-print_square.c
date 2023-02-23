@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_squre - prints squre presentation
+ * print_square - prints squre presentation
  *
  * @size: integer to set square with digit
  */
