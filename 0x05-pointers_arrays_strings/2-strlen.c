@@ -3,6 +3,8 @@
  * _strlen - returns the length of string in vlue
  * 
  * @s: variable to check for length
+ *
+ * Return: returns length
  */
 int _strlen(char *s)
 {
