@@ -11,7 +11,7 @@ void print_rev(char *s)
 		x++;
 
 	for (id = x - 1; id >= 0; id--)
-		_putchar(s[index]);
+		_putchar(s[id]);
 
 	_putchar('\n');
 }
