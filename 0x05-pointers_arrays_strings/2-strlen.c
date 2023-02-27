@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * _strlen - returns the length of string in vlue
- * 
+ * _strlen - returns the length of string inalue
  * @s: variable to check for length
  *
  * Return: returns length
