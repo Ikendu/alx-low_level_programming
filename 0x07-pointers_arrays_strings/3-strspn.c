@@ -25,3 +25,5 @@ unsigned int _strspn(char *s, char *accept)
 		if (s[j] == '\0')
 			return (result);
 	}
+	return (result);
+}
