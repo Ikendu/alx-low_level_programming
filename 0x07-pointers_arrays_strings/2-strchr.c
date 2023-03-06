@@ -14,7 +14,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			retun (s + i);
+			return (s + i);
 		}
 	}
 	if (s[i] == c)
