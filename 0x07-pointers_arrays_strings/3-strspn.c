@@ -1,8 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * _strspn - gets length of prefix substring
+ * _strspn - gets length of prefix substringi
  * @s: string to work on
- * @acccpt: the accepted byte
+ * @accept: the accepted byte
  *
  * Return: returns the values
  */
