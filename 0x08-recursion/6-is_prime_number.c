@@ -2,7 +2,7 @@
 /**
  * checker - checks the prime
  * @i: checker iterator
- * @n: checker number 
+ * @n: checker number
  * Return: value
  */
 int checker(int i, int n)
@@ -14,7 +14,7 @@ int checker(int i, int n)
 	return (1);
 }
 /**
- * s_prime_number - checks if prime or not
+ * is_prime_number - checks if prime or not
  * @n: digit to check
  * Return: 1 or 0;
  */
