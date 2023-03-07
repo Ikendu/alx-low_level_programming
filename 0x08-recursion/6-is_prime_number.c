@@ -24,5 +24,5 @@ int is_prime_number(int n)
 
 	if (n < 2)
 		return (0);
-	return (checker(i, n))l
+	return (checker(i, n));
 }
