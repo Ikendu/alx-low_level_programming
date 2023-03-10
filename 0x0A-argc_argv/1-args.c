@@ -2,7 +2,7 @@
 #include "stdio.h"
 
 /**
- * main - prints the number of args passed 
+ * main - prints the number of args passed
  * @argc: counts argumens
  * @argv: argument vector array
  *
