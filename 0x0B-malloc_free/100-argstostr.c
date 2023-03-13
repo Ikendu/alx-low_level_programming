@@ -20,11 +20,11 @@ char *argstostr(int ac, char **av)
 			size++;
 	}
 	str = malloc(sizeof(char) * size + 1);
-	
+
 	if (str == NULL)
 		return (NULL);
 	i = 0;
-	
+
 	for (a = 0; a < ac; a++)
 	{
 		for (b = 0; av[a][b]; b++)
