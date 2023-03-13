@@ -1,5 +1,5 @@
 #include "main.h"
-#inclde <stdlib.h>
+#include <stdlib.h>
 /**
  * _strdup - returns a pointer
  * @str: string for pointer
