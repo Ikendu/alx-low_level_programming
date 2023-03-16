@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * char string_nconcat - joins strings together
+ * string_nconcat - joins strings together
  * @s1: first string
  * @s2: second string
  * @n: amonut of memory in byte
