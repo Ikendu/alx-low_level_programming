@@ -1,10 +1,12 @@
 #include "function_pointers.h"
+
 /**
- * int_index - serches for an integer value
- * @array: array for searching
- * @size: num of elements in the array
- * @cmp: pointer to the function for comparing
- * return: index of element or -1
+ * int_index - searches for an integer
+ * @array: input integer array.
+ * @size: size of the array.
+ * @cmp: pointer to the function to be used
+ *
+ * Return: index of the first element or -1
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
