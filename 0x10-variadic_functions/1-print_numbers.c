@@ -3,7 +3,7 @@
 /**
  * print_numbers - number printer.
  * @separator: string to seperate numbers.
- * @n: number of integers passed 
+ * @n: number of integers passed
  *
  * Return: no return.
  */
