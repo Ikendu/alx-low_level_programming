@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * list_len - number of elements list
+ * list_len - number of elements in the list
  * @h: pointer to structure
  * Return: length.
  */
