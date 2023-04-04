@@ -1,15 +1,14 @@
 # More singly linked lists
-### C Algorithm Data structure
-C
 
-Algorithm
+###  Algorithm Data structure
 
-Data structure
+## EXPECTATIONS
 
 How to use linked lists
 
 Start to look for the right source of information without too much help
 
+## PROJECTS
 
 Write a function that prints all the elements of a listint_t list.
 
@@ -41,4 +40,4 @@ Write a function that frees a listint_t list.
 
 Write a function that finds the loop in a linked list.
 
-by Aniede Chibundu David
+by [Aniede Chibundu David](https://github.com/Ikendu)
