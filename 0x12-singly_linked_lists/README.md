@@ -2,7 +2,7 @@
 
 ## C Algorithm Data structure
 
-###Concepts
+### Concepts
 
 For this project, we expect you to look at this concept:
 
@@ -17,6 +17,8 @@ Youtube
 When and why using linked lists vs arrays
 
 How to build and use linked lists
+
+## Works to do
 
 1. Write a function that prints all the elements of a list_t list.
 
