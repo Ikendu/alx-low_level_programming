@@ -6,16 +6,10 @@
  *
  * Return: no return.
  */
-typedef struct listp_s
+void free_listp(listp_x **head)
 {
-	void *p;
-	struct listp_s *next;
-} listp_t;
-
-void free_listp(listp_t **head)
-{
-	listp_t *temp;
-	listp_t *curr;
+	listp_x *temp;
+	listp_x *curr;
 
 	if (head != NULL)
 	{
@@ -38,17 +32,17 @@ void free_listp(listp_t **head)
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t nd = 0;
-	listp_t *hp, *new, *add;
+	listp_x *hp, *new, *add;
 
 	hp = NULL;
 	while (head != NULL)
 	{
-		new = malloc(sizeof(listp_t));
+		new = malloc(sizeof(listp_x));
 
 		if (new == NULL)
 			exit(98);
 
-		new->p = (void *)head;
+		new->px = (void *)head;
 		new->next = hp;
 		hp = new;
 
@@ -57,7 +51,7 @@ size_t print_listint_safe(const listint_t *head)
 		while (add->next != NULL)
 		{
 			add = add->next;
-			if (head == add->p)
+			if (head == add->px)
 			{
 				printf("-> [%p] %d\n", (void *)head, head->n);
 				free_listp(&hp);
