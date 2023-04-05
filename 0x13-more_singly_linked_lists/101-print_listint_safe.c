@@ -6,6 +6,12 @@
  *
  * Return: no return.
  */
+typedef struct listp_s
+{
+	void *p;
+	struct listp_s *next;
+} listp_t;
+
 void free_listp(listp_t **head)
 {
 	listp_t *temp;
