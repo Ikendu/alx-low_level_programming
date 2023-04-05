@@ -1,5 +1,11 @@
 #include "lists.h"
 
+typedef struct listp_s
+{
+	void *p;
+	struct listp_s *next;
+} listp_t;
+
 /**
  * free_listp2 - frees a linked list
  * @head: head of a list.
@@ -27,8 +33,9 @@ void free_listp2(listp_t **head)
  * free_listint_safe - frees linked list.
  * @h: head of the list.
  *
- * Return: size of the list.
+ * Return: size of the list
  */
+
 size_t free_listint_safe(listint_t **h)
 {
 	size_t nd = 0;
