@@ -1,21 +1,15 @@
 #include "lists.h"
 
-typedef struct listp_s
-{
-	void *p;
-	struct listp_s *next;
-} listp_t;
-
 /**
  * free_listp2 - frees a linked list
  * @head: head of a list.
  *
  * Return: no return.
  */
-void free_listp2(listp_t **head)
+void free_listp2(listp_x **head)
 {
-	listp_t *temp;
-	listp_t *curr;
+	listp_x *temp;
+	listp_x *curr;
 
 	if (head != NULL)
 	{
@@ -39,18 +33,18 @@ void free_listp2(listp_t **head)
 size_t free_listint_safe(listint_t **h)
 {
 	size_t nd = 0;
-	listp_t *hp, *new, *add;
+	listp_x *hp, *new, *add;
 	listint_t *curr;
 
 	hp = NULL;
 	while (*h != NULL)
 	{
-		new = malloc(sizeof(listp_t));
+		new = malloc(sizeof(listp_x));
 
 		if (new == NULL)
 			exit(98);
 
-		new->p = (void *)*h;
+		new->px = (void *)*h;
 		new->next = hp;
 		hp = new;
 
@@ -59,7 +53,7 @@ size_t free_listint_safe(listint_t **h)
 		while (add->next != NULL)
 		{
 			add = add->next;
-			if (*h == add->p)
+			if (*h == add->px)
 			{
 				*h = NULL;
 				free_listp2(&hp);
