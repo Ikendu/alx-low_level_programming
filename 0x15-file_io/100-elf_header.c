@@ -91,7 +91,7 @@ void show_class(unsigned char *e_ident)
  * show_data - Print out the data of ELF header.
  * @e_ident: A pointer to array containing ELF class.
  */
-void print_data(unsigned char *e_ident)
+void show_data(unsigned char *e_ident)
 {
 	printf("  Data:                              ");
 
