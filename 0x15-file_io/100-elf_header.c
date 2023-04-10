@@ -7,7 +7,7 @@
 #include <stdlib.h>
 
 void ch_elf(unsigned char *e_ident);
-void show_magic(unsigned char *e_ident);
+void print_magic(unsigned char *e_ident);
 void show_class(unsigned char *e_ident);
 void show_data(unsigned char *e_ident);
 void show_version(unsigned char *e_ident);
@@ -15,7 +15,7 @@ void show_abi(unsigned char *e_ident);
 void show_osabi(unsigned char *e_ident);
 void show_type(unsigned int e_type, unsigned char *e_ident);
 void show_entry(unsigned long int e_entry, unsigned char *e_ident);
-void end_elf(int elf);
+void close_elf(int elf);
 
 /**
  * ch_elf - Checks that a file is an ELF file.
@@ -41,12 +41,12 @@ void ch_elf(unsigned char *e_ident)
 }
 
 /**
- * show_magic - outputs the magic number of ELF header.
+ * print_magic - outputs the magic number of ELF header.
  * @e_ident: A pointer to an array with ELF magic numbers.
  *
  * Description: spaces sepretions itendifies magic numbers.
  */
-void show_magic(unsigned char *e_ident)
+void print_magic(unsigned char *e_ident)
 {
 	int ix;
 
@@ -64,7 +64,7 @@ void show_magic(unsigned char *e_ident)
 }
 
 /**
- * print_class - Prints the class of an ELF header.
+ * show_class - Prints the class of an ELF header.
  * @e_ident: A pointer to array containing ELF class.
  */
 void show_class(unsigned char *e_ident)
@@ -297,7 +297,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 
 	ch_elf(header->e_ident);
 	printf("ELF Header:\n");
-	show_magic(header->e_ident);
+	print_magic(header->e_ident);
 	show_class(header->e_ident);
 	show_data(header->e_ident);
 	show_version(header->e_ident);
